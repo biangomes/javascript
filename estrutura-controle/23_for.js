@@ -36,10 +36,11 @@ for (const j of numbers) {
     console.log(j);
 }
 
+console.log("==================");
 
-// for (const x of pessoas) {
-//     ^
-// TypeError: pessoas is not iterable
-for (const x of pessoas) {
-    console.log(x, ":", pessoas[x]);
+for (const value of numbers) {
+    if (value > 100) {
+        continue;
+    }
+    console.log("break", value);
 }
